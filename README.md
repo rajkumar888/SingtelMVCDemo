@@ -3,7 +3,9 @@ this is a maven project
 Selenium, cucumber with testNG 
 
 feature file location : ./src/test/resources/features/Assignment.feature
+
 runner class location : ./src/test/java/runner/Runner.java
+
 Stepdef file location : ./src/main/java/steps/StepsDef.java
 
 
