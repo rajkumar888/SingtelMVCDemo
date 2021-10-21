@@ -9,7 +9,7 @@ runner class location : ./src/test/java/runner/Runner.java
 Stepdef file location : ./src/main/java/steps/StepsDef.java
 
 
-Steps 1 :  clone the project and switch to the master branch
+Step 1 :  clone the project and switch to the master branch
 
 Step 2 :  then Open Testng.xml file
 
