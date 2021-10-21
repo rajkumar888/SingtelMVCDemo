@@ -30,12 +30,17 @@ public class StepsDef extends Runner {
         js = (JavascriptExecutor) driver;
         actions = new Actions(driver);
         driver.get(url);
+
+        System.out.println("Url has been opened.....");
     }
 
-    @When("^user clicks on whats needs to be done text box$")
+    @When("^user clicks on what needs to be done text box$")
     public void user_clicks_on_Learn_More_button() {
         element = driver.findElement(By.className("new-todo"));
         element.click();
+
+        System.out.println("user clicks on what needs to be done");
+
     }
 
 
@@ -64,11 +69,13 @@ public class StepsDef extends Runner {
         for (WebElement ele : elementlist) {
             listoftext.add(ele.getText().trim());
         }
+        System.out.println("items have been added successfully");
+
 
         for (String ele : listtodoitems) {
             Assert.assertTrue(listoftext.contains(ele.trim()), ele + " is not found in the list");
         }
-
+        System.out.println("items have been verified");
         all=listoftext.size();
     }
 
@@ -80,6 +87,7 @@ public class StepsDef extends Runner {
             element.clear();
             element.sendKeys(item, Keys.ENTER);
         }
+        System.out.println("to do items has been created....");
     }
 
     @When("^user deletes two items form list$")
@@ -91,10 +99,12 @@ public class StepsDef extends Runner {
         for (int i = 0; i < checkboxlist.size() - 1; i++) {
             actions.click(checkboxlist.get(i)).build().perform();
         }
+        System.out.println("some items are deleted.....");
 
-        // delete the seleted to do items
+        // delete the selected to do items
         WebElement element = driver.findElement(By.xpath("//button[@class='clear-completed']"));
         actions.click(element).build().perform();
+        System.out.println("user clicks on the all task left button.....");
     }
 
     @Then("^verify one item is still there in the list$")

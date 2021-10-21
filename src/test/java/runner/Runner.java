@@ -66,6 +66,5 @@ public class Runner extends AbstractTestNGCucumberTests{
 		Thread.sleep(5000);
 		driver.quit();
 	}
-	
 
 }

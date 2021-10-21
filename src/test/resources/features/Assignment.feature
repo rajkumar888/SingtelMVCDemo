@@ -3,7 +3,7 @@ Feature: SingTel Demo project
 
   Scenario: TC001 verify user is able to create todo list
     Given user has launched the url
-    When user clicks on whats needs to be done text box
+    When user clicks on what needs to be done text box
     And user creates todo list
       | Task1 |
       | Task2 |
