@@ -1,5 +1,3 @@
- Directory of D:\Project\SingtelMVCDemo
-
 this is a maven project
 
 Selenium, cucumber with testNG 
